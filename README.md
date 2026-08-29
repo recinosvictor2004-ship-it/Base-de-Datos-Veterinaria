@@ -72,7 +72,8 @@ El archivo `estructura.sql` contiene:
 ```sql
 USE veterinaria;
 SOURCE estructura.sql;
-🐾 2. Inserción de datos (DML)
+----------------
+### 🐾 2. Inserción de datos (DML)
 El archivo datos.sql incluye:
 
 5 dueños
@@ -91,7 +92,8 @@ Todos los datos están diseñados para respetar las llaves foráneas y mantener 
 
 USE veterinaria;
 SOURCE datos.sql;
-🔍 3. Consultas SQL (DQL)
+-------------
+### 🔍 3. Consultas SQL (DQL)
 El archivo consultas.sql contiene 15 consultas, incluyendo:
 
 Alias
@@ -108,10 +110,10 @@ HAVING
 
 Creación de tabla desde consulta
 
-🔧 Ejecución
+## 🔧 Ejecución
 USE veterinaria;
 SOURCE consultas.sql;
 
 --------
-👤 Autores
+👤 Autor
 Victor Manuel Recinos Gómez
