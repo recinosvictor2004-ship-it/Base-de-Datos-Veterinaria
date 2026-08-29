@@ -1,12 +1,11 @@
-# 🐾 Sistema de Gestión Veterinaria
-
-Base de datos diseñada para administrar información de una clínica veterinaria, incluyendo dueños, mascotas, servicios, visitas y tratamientos.  
-Este proyecto fue desarrollado como parte de una práctica académica de modelación y gestión de bases de datos.
+# 🐾 Base de Datos – Veterinaria  
+Proyecto académico que modela la gestión de una veterinaria utilizando SQL. Incluye estructura de tablas, inserción de datos, consultas y diagrama entidad–relación.
 
 ---
 
-## 📁 Estructura del repositorio
+## 📁 Estructura del Repositorio
 
+```
 veterinaria/
 │
 ├── estructura.sql        → Archivo DDL (creación de tablas)
@@ -14,106 +13,92 @@ veterinaria/
 ├── consultas.sql         → Archivo DQL (consultas requeridas)
 ├── diagrama.png          → Diagrama E-R del proyecto
 └── README.md             → Documentación del proyecto
+```
 
 ---
 
-## 📌 Descripción del proyecto
+## 🧱 1. Estructura de la Base de Datos (DDL)
 
-El objetivo del proyecto es construir una base de datos funcional para una veterinaria, aplicando:
+El archivo **estructura.sql** contiene la creación de todas las tablas del proyecto:
 
-- Modelado E-R  
-- Normalización  
-- Llaves primarias y foráneas  
-- Relaciones 1:N  
-- Consultas SQL con funciones de agregación  
-- Creación de tablas a partir de consultas  
-- Documentación profesional en GitHub  
+- `dueno`
+- `mascota`
+- `servicio`
+- `visita`
+- `tratamiento`
 
-La base de datos permite gestionar:
-
-- Información de **dueños**  
-- Registro de **mascotas**  
-- Catálogo de **servicios veterinarios**  
-- Historial de **visitas**  
-- Aplicación de **tratamientos**
-
----
-
-## 🗂️ Diagrama E-R
-
-El diagrama E-R incluye las entidades:
-
-- **dueno**  
-- **mascota**  
-- **servicio**  
-- **visita**  
-- **tratamiento**
-
-Con sus respectivas relaciones y cardinalidades.
-
-El archivo se encuentra como:
-
-diagrama veterinaria.png
-
----
-
-## 🧱 1. Estructura de la base de datos (DDL)
-
-El archivo `estructura.sql` contiene:
-
-- Creación de todas las tablas  
+Incluye:
 - Llaves primarias  
 - Llaves foráneas  
-- Restricciones (NOT NULL, CHECK)  
-- Orden correcto de creación para evitar errores de FK  
+- Tipos de datos adecuados  
+- Relaciones entre entidades  
 
-### 🔧 Ejecución
+---
 
-```sql
-USE veterinaria;
-SOURCE estructura.sql;
-----------------
-### 🐾 2. Inserción de datos (DML)
-El archivo datos.sql incluye:
+## 📥 2. Inserción de Datos (DML)
 
-5 dueños
+El archivo **datos.sql** contiene los `INSERT INTO` necesarios para poblar la base de datos con datos de ejemplo coherentes con el modelo.
 
-10 mascotas
+---
 
-5 servicios
+## 🔍 3. Consultas SQL (DQL)
 
-10 visitas
+El archivo **consultas.sql** incluye las consultas solicitadas por el docente:
 
-5 tratamientos
+- Consultas con `JOIN`
+- Consultas con `GROUP BY`
+- Consultas con `HAVING`
+- Consultas con funciones agregadas
+- Consultas con alias
+- Consultas de filtrado y ordenamiento
 
-Todos los datos están diseñados para respetar las llaves foráneas y mantener coherencia.
+Cada consulta está numerada y comentada para facilitar su lectura.
 
-🔧 Ejecución
+---
 
-USE veterinaria;
-SOURCE datos.sql;
--------------
-### 🔍 3. Consultas SQL (DQL)
-El archivo consultas.sql contiene 15 consultas, incluyendo:
+## 🧩 4. Diagrama Entidad–Relación
 
-Alias
+El archivo **diagrama.png** muestra el modelo E-R del proyecto, incluyendo:
 
-Subconsultas
+- Entidades  
+- Relaciones  
+- Cardinalidades  
+- Atributos principales  
 
-Funciones de agregación
+---
 
-JOIN
+## 🛠️ Tecnologías Utilizadas
 
-GROUP BY
+| Tecnología | Uso |
+|-----------|-----|
+| **SQL** | Modelado, creación y consultas |
+| **MySQL / MariaDB** | Motor de base de datos |
+| **DBeaver / Workbench** | Visualización y pruebas |
+| **Draw.io / Diagrams.net** | Creación del diagrama E-R |
 
-HAVING
+---
 
-Creación de tabla desde consulta
+## 🎯 Objetivo Académico
 
-## 🔧 Ejecución
-USE veterinaria;
-SOURCE consultas.sql;
+Este proyecto demuestra el dominio de:
 
---------
-👤 Autor
-Victor Manuel Recinos Gómez
+- Diseño de bases de datos relacionales  
+- Normalización básica  
+- Relaciones entre entidades  
+- Escritura de scripts SQL organizados  
+- Consultas avanzadas con funciones agregadas  
+
+---
+
+## 👤 Autor
+
+**Victor Manuel Recinos Gómez**  
+Ingeniería en Ciencias y Sistemas – USAC  
+2026
+
+---
+
+## 📜 Licencia
+
+Este proyecto es de uso académico.  
+Puedes utilizarlo como referencia, pero no copiarlo para entregas sin autorización.
