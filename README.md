@@ -101,4 +101,4 @@ Ingeniería en Ciencias y Sistemas – USAC
 ## 📜 Licencia
 
 Este proyecto es de uso académico.  
-Puedes utilizarlo como referencia, pero no copiarlo para entregas sin autorización.
+Puedes utilizarlo como referencia, pero no copiarlo para entregas sin autorización porque yo lo digo y como soy engasado por eso se hace.
